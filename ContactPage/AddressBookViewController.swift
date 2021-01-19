@@ -100,7 +100,7 @@ class AddressBookViewController: UIViewController {
         case contactTable.headerView(forSection: 25)?.textLabel?.text:
                 contactTable.scrollToRow(at: [25,0], at: .top, animated: true)
         default:
-                print("Not Available")
+            contactTable.scrollToRow(at: [0,0], at: .top, animated: true)
         }
         
     }
